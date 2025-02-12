@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Danang Suprastiya</title>
+    <link rel="icon" type="image/x-icon" href="icons8-attach-resume-male-100.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Typing effect function for multiple lines
+        function typeWriter(element, text, speed) {
+            let i = 0;
+            function typing() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typing, speed);
+                }
+            }
+            typing();
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const nameElement = document.getElementById('name');
+            const roleElement = document.getElementById('roles');
+            const nameText = "Hai, Saya Danang Suprastiya";
+            const roleText = "Datacenter Operation | Senior Data Center Operation";
+            typeWriter(nameElement, nameText, 100); // Typing effect for name
+            setTimeout(() => {
+                typeWriter(roleElement, roleText, 100); // Typing effect for roles
+            }, 1500); // Delay for typing the roles after name
+        });
+    </script>
+</head>
+
+<body>
+    
+<!-- Header with Circular Profile Image -->
+<header class="text-white py-5" id="home" style="background-image: url('background.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+            <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Pengalaman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyek</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row align-items-center mt-4"> <!-- Added margin top here -->
+            <div class="col-md-6 text-center text-md-left">
+                <h1 id="name" class="font-weight-bold"></h1>
+                <p id="roles" class="lead"></p>
+                <div class="contact mt-4">
+                    <a href="mailto:suprastiyadanang@gmail.com" class="text-white mx-2" style="font-size: 24px;">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/6285877312161" class="text-white mx-2" style="font-size: 24px;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://id.linkedin.com/in/danang-suprastiya-933b6512b" class="text-white mx-2" style="font-size: 24px;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="CV_Danang_Suprastiya.pdf" class="text-white mx-2" download style="font-size: 24px;">
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <a href="#about" class="btn btn-light mt-4">Learn More</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <!-- Circular profile image -->
+                <div class="profile-img-wrapper">
+                    <img src="danangnew.jpg" alt="Profil Hari Yadi" class="profile-img-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">Profil Danang Suprastiya</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="danangnew.jpg" alt="Profil Danang Suprastiya" class="rounded-circle profile-img mb-3" style="width: 200px; height: 200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2>Tentang Saya</h2>
+            <p>Saya lulusan S1 Teknik informatika dari STMIK AKAKOM / UTDI Yogyakarta. Saat ini saya bekerja sebagai Sr. Data Center Operation di PT Dunia Virtual Online Tbk (AREA31), sebelumya saya pernah bekerja sebagai datacenter Operation di PT Dwi Tunggal Putra. 
+<br/>Serta saya Memiliki pengalaman dan keahlian dibidang IT Support, Datacenter Operation ,Networking, IT Infrastruktur dll kurang lebih selama 10 tahun. Dibuktikan dengan sertifikat yang saya miliki dan beberapa projek yang saya tampilkan di dalam portofolio saya saat ini</p>
+        </section>
+
+        <!-- Bagian Keahlian -->
+        <section id="skills" class="mb-5">
+            <h2>Keahlian</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Keahlian Teknis</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Networking, Troubleshoot IT</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Linux, Mikrotik, Cisco</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Email Administrator</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Datacenter Management</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Soft Skills</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Jujur, Pekerja Keras, Dinamis, Kreatif dan menyukai tantangan</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Komunikasi, Manajemen Waktu</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Dapat Bekerja dalam team maupun individu</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3 wow animate__animated animate__fadeInRight" data-wow-delay="0.6s">
+                            <i class="fas fa-check-circle me-2" style="color: #4CAF50;"></i>
+                            <span>  Bertanggung jawab dan komitmen terhadap pekerjaan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Pengalaman Kerja dengan Show More -->
+        <section id="experience" class="mb-5">
+            <h2>Pengalaman Kerja</h2>
+
+            <!-- Initial 2 Experiences -->
+            <div class="card mb-3 wow animate__animated animate__fadeInUp" data-toggle="modal" data-target="#experienceModal1">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">Sr.Data Center Operation</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">PT.Dunia Virtual Online, Tbk (AREA31), Jakarta Januari 2022 – Sekarang</h6>
+                        <ul>
+                            <li>Membantu, mengawasi dan memberikan arahan kepada staf operation dalam menjalankan tugasnya.</li>
+                            <li>Memberikan masukan mengenai situasi dan kondisi operasional data center.</li>
+                            <li>Sebagai second layer untuk menangani keluhan pelanggan/masalah operasional yang tidak dapat ditangani oleh staff operation.</li>
+                            <li>Melaksanakan kegiatan periodik bulanan (laporan SLA customer, data otb, crossconect pelanggan, inventaris barang).</li>
+                            <li>Membuat laporan teknis, kondisi operasi saat ini, jumlah insiden dan resolusi insiden.</li>
+                            <li>Membuat teknikal analys untuk kebutuhan interkoneksi pelanggan pada sistem.</li>
+                            <li>Membuat ticketing report pada sistem terhadap insiden yang ada pada data center.</li>
+                        </ul>
+                    </div>
+                    <img src="company2.png" alt="Logo PT.Dunia Virtual Online Tbk (AREA31)" class="company-logo">
+                </div>
+            </div>
+
+             <div class="card mb-3 wow animate__animated animate__fadeInUp" data-toggle="modal" data-target="#experienceModal2">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">Data Center Operation</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">PT.Dwi Tunggal Putra, Jakarta   September 2012 – Desember 2021</h6>
+                        <ul>
+                            <li>Monitoring jaringan, suhu, dan utilitas datacenter</li>
+                            <li>Troubleshooting masalah jaringan dan email di CPANEL</li>
+                            <li>Config Linux Server dan Windows Server sesuai request client</li>
+                            <li>Konfigurasi perangkat Cisco seperti Switching, Trunk, VLAN</li>
+                            <li>Membuat laporan harian dan bulanan (Jaringan, Suhu, konsumsi daya)</li>
+                        </ul>
+                    </div>
+                    <img src="company3.jpg" alt="Logo PT.Dwi Tunggal Putra" class="company-logo">
+                </div>
+            </div>
+
+            
+
+            <!-- "Show More" Button -->
+            <div class="text-center">
+                <button id="showMoreBtn" class="btn btn-primary">Show More</button>
+            </div>
+            <!-- Experience Modals -->
+<div class="modal fade" id="experienceModal1" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="experienceModalLabel1">Detail Pengalaman Kerja - Sr.Data Center Operation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p><strong>Perusahaan:</strong> PT.Dunia Virtual Online, Tbk (AREA31)</p>
+                        <p><strong>Lokasi:</strong> Depok & Jakarta</p>
+                        <p><strong>Periode:</strong> Januari 2022 – Sekarang</p>
+                        <p><strong>Tugas:</strong></p>
+                        <ul>
+                            <li>Membantu, mengawasi dan memberikan arahan kepada staf operation dalam menjalankan tugasnya.</li>
+                            <li>Memberikan masukan mengenai situasi dan kondisi operasional data center.</li>
+                            <li>Sebagai second layer untuk menangani keluhan pelanggan/masalah operasional yang tidak dapat ditangani oleh staff operation.</li>
+                            <li>Melaksanakan kegiatan periodik bulanan (laporan SLA customer, data otb, crossconect pelanggan, inventaris barang).</li>
+                            <li>Membuat laporan teknis, kondisi operasi saat ini, jumlah insiden dan resolusi insiden.</li>
+                            <li>Membuat teknikal analys untuk kebutuhan interkoneksi pelanggan pada sistem.</li>
+                            <li>Membuat ticketing report pada sistem terhadap insiden yang ada pada data center.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="company2.png" alt="Logo PT.Dunia Virtual Online" class="company-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="experienceModal2" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="experienceModalLabel2">Detail Pengalaman Kerja - Data Center Operation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p><strong>Perusahaan:</strong> PT.Dwi Tunggal Putra</p>
+                        <p><strong>Lokasi:</strong> Jakarta</p>
+                        <p><strong>Periode:</strong> Sep 2012 – Des 2021</p>
+                        <p><strong>Tugas:</strong></p>
+                        <ul>
+                            <li>Monitoring jaringan, suhu, dan utilitas datacenter</li>
+                            <li>Troubleshooting masalah jaringan dan email di CPANEL</li>
+                            <li>Config Linux Server dan Windows Server sesuai request client</li>
+                            <li>Konfigurasi perangkat Cisco seperti Switching, Trunk, VLAN</li>
+                            <li>Membuat laporan harian dan bulanan (Jaringan, Suhu, konsumsi daya)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="company3.jpg" alt="Logo PT.Dwi Tunggal Putra" class="company-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="projects" class="mb-5">
+            <h2>Proyek Saya</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="proyekipflow.jpg" class="card-img-top project-img" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalasi IP Potion NetFlow</h5>
+                            <p class="card-text">Saya pernah melakukan instalasi IP Potion NetFlow menggunakan distro debian linux, sebuah solusi untuk memonitor dan menganalisis lalu lintas jaringan dengan menggunakan teknologi NetFlow. Proyek ini bertujuan untuk meningkatkan visibilitas terhadap aktivitas jaringan dan membantu dalam mengidentifikasi masalah performa jaringan..</p>
+                            <a class='btn btn-primary' href='proyek1'>Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="proyekmrtg.jpg" class="card-img-top project-img" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalasi server MRTG IIX pelanggan Data Center</h5>
+                            <p class="card-text">Saya pernah melakukan instalasi server MRTG (Multi Router Traffic Grapher) menggunakan Centos 7 sebagai server utama supaya MRTG dapat diakses melalui internet. MRTG IIX ini digunakan untuk memantau lalu lintas jaringan lokal pelanggan secara visual.</p>
+                            <a class='btn btn-primary' href='proyek1'>Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="proyekmrtgix.jpg" class="card-img-top project-img" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalasi server MRTG IX pelanggan Data Center</h5>
+                            <p class="card-text">Saya pernah melakukan instalasi server MRTG (Multi Router Traffic Grapher) menggunakan Centos 7 sebagai server utama supaya MRTG dapat diakses melalui internet. MRTG IX ini digunakan untuk memantau lalu lintas jaringan internasional pelanggan secara visual.</p>
+                            <a class='btn btn-primary' href='proyek1'>Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="proyekowncloud.jpg" class="card-img-top project-img" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Instalasi Owncloud untuk penyimpanan file berbasis cloud</h5>
+                            <p class="card-text">Saya pernah melakukan instalasi owncloud menggunakan centos 7 di server sebagai tempat penyimpanan berbasis cloud untuk memudahkan user menyimpan file / sebagai layanan cloud storage.</p>
+                            <a class='btn btn-primary' href='proyek1'>Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Sertifikat dengan Show More -->
+        <section id="experience" class="mb-5">
+            <h2>Sertifikat</h2>
+
+            <!-- Initial 2 Sertifikat -->
+            <div class="card mb-3 wow animate__animated animate__fadeInUp" data-toggle="modal" data-target="#experienceModal11">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="card-title">STMIK AKAKOM / Universitas Teknologi Digital Indonesia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">JAVA EDUCATION NETWORK INDONESIA : Java Programming - 2011.</h6>
+                        <h5 class="card-title">INIXINDO</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">PENGELOLAAN DATA CENTER - 2018.</h6>
+                        <h5 class="card-title">ARISTA NETWORK</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Leaf Spine Architecture,Virtual Extensible LAN (Vxlan), and ethernet VPN (EVPN) - 2023.</h6>
+                        <h5 class="card-title">EVENT CERDAS</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Panduan audit pusat data sesuai sni 8799 - 2023.</h6>
+                        <h5 class="card-title">ID-Networkers</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Teknik meyederhanakan deployment fortigate dengan fortimanager - 2024.</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Experience Modals Sertifikat -->
+<div class="modal fade" id="experienceModal11" tabindex="-1" role="dialog" aria-labelledby="experienceModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="experienceModalLabe1"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>     
+                    <div> 
+                        <img src="jeni.jpg" alt="Logo JENI" class="company-logo">
+                        <img src="inixindocrt.jpg" alt="Logo JENI" class="company-logo">
+                        <img src="aristacrt.jpg" alt="Logo JENI" class="company-logo">
+                        <img src="eventcerdascrt.jpg" alt="Logo JENI" class="company-logo">
+                        <img src="idnetworkcrt.jpg" alt="Logo JENI" class="company-logo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+          
+
+            <!-- Script for "Show More" Functionality -->
+            <script>
+                document.getElementById("showMoreBtn").addEventListener("click", function () {
+                    var moreExperience = document.getElementById("moreExperience");
+                    if (moreExperience.style.display === "none") {
+                        moreExperience.style.display = "block";
+                        this.textContent = "Show Less";
+                    } else {
+                        moreExperience.style.display = "none";
+                        this.textContent = "Show More";
+                    }
+                });
+            </script>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>© 2022 Danang Suprastiya. | Follow me on <a href="https://id.linkedin.com/in/danang-suprastiya-933b6512b" class="text-white">LinkedIn</a></p>
+    </footer>
+    <!-- WOW.js for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
